@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>
+      SPLI <br />
+      TTER
+    </h1>
+
+    <div id="parent">
+      <div id="input">
+        <div class="amount input">
+          <p>Bill</p>
+          <input
+            type="text"
+            name="bill-input"
+            id="bill-input"
+            placeholder="$"
+          />
+        </div>
+        <div class="tip input">
+          <p>Select Tip %</p>
+          <div class="tip-grid">
+            <div class="tip-option">5%</div>
+            <div class="tip-option">10%</div>
+            <div class="tip-option">15%</div>
+            <div class="tip-option">25%</div>
+            <div class="tip-option">50%</div>
+            <div class="tip-option">
+              <input
+                type="text"
+                name="custom-tip"
+                id="custom-tip"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="number input">
+          <p>Number of People</p>
+          <input type="text" id="number-input" placeholder="" />
+        </div>
+      </div>
+      <div id="output">
+        <div class="tip output">Tip Amount / person</div>
+        <div class="total output">Total / person</div>
+      </div>
+    </div>
+  </body>
+</html>
