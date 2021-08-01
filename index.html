@@ -12,53 +12,78 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Tip calculator app</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>
+    <h1 id="heading">
       SPLI <br />
       TTER
     </h1>
 
     <div id="parent">
       <div id="input">
-        <div class="amount input">
+        <div class="amount">
           <p>Bill</p>
           <input
             type="text"
-            name="bill-input"
-            id="bill-input"
-            placeholder="$"
+            name="amount-input"
+            id="amount-input"
+            class="input"
+            placeholder=""
           />
         </div>
-        <div class="tip input">
+        <div class="tip">
           <p>Select Tip %</p>
           <div class="tip-grid">
-            <div class="tip-option">5%</div>
-            <div class="tip-option">10%</div>
-            <div class="tip-option">15%</div>
-            <div class="tip-option">25%</div>
-            <div class="tip-option">50%</div>
-            <div class="tip-option">
-              <input
-                type="text"
-                name="custom-tip"
-                id="custom-tip"
-                placeholder="Custom"
-              />
-            </div>
+            <div class="tip-option pre">5%</div>
+            <div class="tip-option pre">10%</div>
+            <div class="tip-option pre">15%</div>
+            <div class="tip-option pre">25%</div>
+            <div class="tip-option pre">50%</div>
+            <input
+              type="text"
+              name="custom-tip"
+              id="custom-tip"
+              class="input tip-option"
+              placeholder="Custom"
+            />
           </div>
         </div>
-        <div class="number input">
+        <div class="number">
           <p>Number of People</p>
-          <input type="text" id="number-input" placeholder="" />
+          <input type="text" id="number-input" class="input" placeholder="" />
         </div>
       </div>
       <div id="output">
-        <div class="tip output">Tip Amount / person</div>
-        <div class="total output">Total / person</div>
+        <div class="display">
+          <div class="display-row">
+            <p>
+              Tip Amount <br />
+              <span class="display-row-subtitle">/ person</span>
+            </p>
+            <h1>$0.00</h1>
+          </div>
+          <div class="display-row">
+            <p>
+              Total <br />
+              <span class="display-row-subtitle">/ person</span>
+            </p>
+            <h1>$0.00</h1>
+          </div>
+        </div>
+        <button class="reset">RESET</button>
       </div>
     </div>
+    <footer>
+      <p>Built by <a href="https://github.com/praneetk77">Praneet</a></p>
+    </footer>
   </body>
 </html>

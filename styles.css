@@ -1,41 +1,160 @@
 body {
   background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
 }
 
-h1 {
+h1,
+h3 {
+  margin: 0;
+}
+
+#heading {
   text-align: center;
-  margin: 10% auto 0;
+  margin: 3% auto 5%;
   color: #5e7a7d;
+  letter-spacing: 0.5rem;
 }
 
 #parent {
   display: flex;
   background-color: white;
-  border-radius: 10px;
-  padding: 2rem;
-  margin: 0 auto 20%;
-  width: 800px;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0 auto 6%;
+  width: 1000px;
 }
 
 /* Input Tab */
 
 #input {
-  background-color: red;
+  background-color: white;
   display: flex;
+  order: 1;
+  padding: 0 1rem;
   margin-right: 1rem;
   flex-direction: column;
   width: 100%;
 }
 
+#input > div {
+  margin-bottom: 1rem;
+}
+
+.amount {
+  margin-top: 1rem;
+}
+
+.input {
+  width: 100%;
+  font-family: "Space Mono", monospace;
+}
+
+.amount > p,
+.tip > p,
+.number > p {
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
 .tip-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tip-option {
+  color: whitesmoke;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  background-color: hsl(183, 100%, 15%);
+}
+
+.pre:hover {
+  background-color: #27c0ab;
+  color: #00494d;
+}
+
+#custom-tip {
+  background-color: #f4fafa;
+  border: none;
+  color: #00494d;
+}
+
+#number-input,
+#amount-input {
+  background-color: #f4fafa;
+  font-family: "Space Mono", monospace;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  color: #00494d;
+  text-align-last: right;
 }
 
 #output {
-  background-color: green;
+  background-color: #00494d;
+  border-radius: 10px;
+  padding: 1rem;
+  order: 1;
   display: flex;
   margin-left: 1rem;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
+  color: whitesmoke;
+}
+
+.display {
+  padding: 1rem;
+}
+
+.display-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.display-row p {
+  color: #ffffee;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.display-row h1 {
+  color: #27c0ab;
+}
+
+.display-row-subtitle {
+  color: hsl(185, 41%, 84%);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.reset {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.7rem;
+  font-weight: 900;
+  border: none;
+  margin: 0 1rem 1rem;
+  padding: 0.5rem;
+  font-family: "Space Mono", monospace;
+  background-color: #27c0ab;
+  color: #00494d;
+  border-radius: 5px;
+}
+
+.reset:hover {
+  background-color: #c5e4e7;
+}
+
+footer {
+  text-align: center;
+  color: black;
 }
