@@ -74,6 +74,17 @@ h3 {
   background-color: hsl(183, 100%, 15%);
 }
 
+.tip-option-selected {
+  color: #00494d;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  background-color: #27c0ab;
+}
+
 .pre:hover {
   background-color: #27c0ab;
   color: #00494d;
@@ -93,6 +104,7 @@ h3 {
   font-size: 1.5rem;
   border: none;
   color: #00494d;
+  -moz-appearance: textfield;
   text-align-last: right;
 }
 

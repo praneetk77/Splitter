@@ -33,7 +33,7 @@
         <div class="amount">
           <p>Bill</p>
           <input
-            type="text"
+            type="number"
             name="amount-input"
             id="amount-input"
             class="input"
@@ -49,7 +49,7 @@
             <div class="tip-option pre">25%</div>
             <div class="tip-option pre">50%</div>
             <input
-              type="text"
+              type="number"
               name="custom-tip"
               id="custom-tip"
               class="input tip-option"
@@ -59,7 +59,7 @@
         </div>
         <div class="number">
           <p>Number of People</p>
-          <input type="text" id="number-input" class="input" placeholder="" />
+          <input type="number" id="number-input" class="input" placeholder="" />
         </div>
       </div>
       <div id="output">
@@ -69,14 +69,14 @@
               Tip Amount <br />
               <span class="display-row-subtitle">/ person</span>
             </p>
-            <h1>$0.00</h1>
+            <h1 class="tip-per-person">$0.00</h1>
           </div>
           <div class="display-row">
             <p>
               Total <br />
               <span class="display-row-subtitle">/ person</span>
             </p>
-            <h1>$0.00</h1>
+            <h1 class="total-per-person">$0.00</h1>
           </div>
         </div>
         <button class="reset">RESET</button>
@@ -85,5 +85,7 @@
     <footer>
       <p>Built by <a href="https://github.com/praneetk77">Praneet</a></p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
