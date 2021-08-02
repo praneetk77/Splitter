@@ -10,7 +10,7 @@ h3 {
 
 #heading {
   text-align: center;
-  margin: 3% auto 5%;
+  margin: 3% auto 4%;
   color: #5e7a7d;
   letter-spacing: 0.5rem;
 }
@@ -20,7 +20,7 @@ h3 {
   background-color: white;
   border-radius: 20px;
   padding: 1rem;
-  margin: 0 auto 6%;
+  margin: 0 auto 5%;
   width: 1000px;
 }
 
@@ -45,7 +45,7 @@ h3 {
 }
 
 .input {
-  width: 100%;
+  width: 96.5%;
   font-family: "Space Mono", monospace;
 }
 
@@ -94,18 +94,80 @@ h3 {
   background-color: #f4fafa;
   border: none;
   color: #00494d;
+  caret-color: #27c0ab;
 }
 
-#number-input,
-#amount-input {
+.hidden-row {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.warning {
+  color: red;
+  visibility: hidden;
+}
+
+.number-input,
+.amount-input {
+  text-align: right;
+  caret-color: #27c0ab;
   background-color: #f4fafa;
   font-family: "Space Mono", monospace;
   padding: 0.5rem 0.5rem;
   font-size: 1.5rem;
   border: none;
   color: #00494d;
-  -moz-appearance: textfield;
   text-align-last: right;
+}
+
+.number-input:focus,
+.amount-input:focus,
+#custom-tip:focus {
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #27c0ab;
+  /* border: 2px solid #27c0ab;
+  border-radius: 5px; */
+  /* box-shadow: 0 0 10px #719ece; */
+}
+
+.number-input-zero {
+  text-align: right;
+  caret-color: red;
+  background-color: #f4fafa;
+  font-family: "Space Mono", monospace;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  color: #00494d;
+  text-align-last: right;
+}
+
+.number-input-zero:focus {
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px red;
+  /* border: 2px solid #27c0ab;
+  border-radius: 5px; */
+  /* box-shadow: 0 0 10px #719ece; */
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button,
+.number-input-zero::-webkit-outer-spin-button,
+.number-input-zero::-webkit-inner-spin-button,
+.amount-input::-webkit-outer-spin-button,
+.amount-input::-webkit-inner-spin-button,
+#custom-tip::-webkit-outer-spin-button,
+#custom-tip::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
 }
 
 #output {
