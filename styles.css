@@ -232,3 +232,43 @@ footer {
   text-align: center;
   color: black;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  #parent {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 0;
+    justify-content: center;
+  }
+
+  #input {
+    width: 80%;
+    align-self: center;
+  }
+
+  .tip-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+  }
+
+  #output {
+    margin-left: 0;
+    width: 80%;
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .tip-option,
+  .tip-option-selected {
+    align-self: center;
+  }
+}
