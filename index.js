@@ -6,17 +6,27 @@ var amount,
 
 $(".pre").on("click", function () {
   getValues();
-  $(".pre").removeClass("tip-option-selected");
-  $("#custom-tip").val("");
-  $(this).addClass("tip-option-selected");
-  if (checkNumber()) {
-    tip = this.textContent;
-    tip = tip.substring(0, tip.length - 1);
-    displayZero();
+
+  if ($(this).hasClass("tip-option-selected")) {
+    $(".pre").removeClass("tip-option-selected");
+    $("#custom-tip").val("");
+    tip = 0;
+    if (checkNumber()) displayZero();
+    else displayValue();
   } else {
-    tip = this.textContent;
-    tip = tip.substring(0, tip.length - 1);
-    displayValue();
+    $(".pre").removeClass("tip-option-selected");
+    $("#custom-tip").val("");
+
+    $(this).addClass("tip-option-selected");
+    if (checkNumber()) {
+      tip = this.textContent;
+      tip = tip.substring(0, tip.length - 1);
+      displayZero();
+    } else {
+      tip = this.textContent;
+      tip = tip.substring(0, tip.length - 1);
+      displayValue();
+    }
   }
 });
 

@@ -85,6 +85,10 @@ h3 {
   background-color: #27c0ab;
 }
 
+.tip-grid .tip-option-selected:hover {
+  background-color: #c5e4e7;
+}
+
 .pre:hover {
   background-color: #27c0ab;
   color: #00494d;
