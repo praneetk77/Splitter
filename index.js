@@ -68,6 +68,7 @@ $(".reset").on("click", function () {
   $(".input-1").val("");
   $(".pre").removeClass("tip-option-selected");
   displayZero();
+  warningOff();
   amount = 0;
   tip = 0;
   number = 0;
