@@ -1,6 +1,6 @@
-# Splitter
+# [Splitter](https://splitter-praneet.netlify.app/)
 
-Link - https://splitter-praneet.netlify.app/
+This responsive web app allows users to split their bills while also allowing them to factor in tips. Created using HTML, CSS and JavaScript.
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
 
